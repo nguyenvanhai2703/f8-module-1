@@ -1,0 +1,41 @@
+@use "/scss/mixins";
+
+.header {
+  // background-color: var(--yellow-light);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  max-height: 67px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+
+  .logo {
+    text-align: center;
+  }
+  .header-contact {
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  li:hover a {
+    color: var(--orange);
+  }
+  .nav {
+    display: flex;
+    width: 523px;
+    height: 28px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include mixins.screen(xl) {
+  }
+}

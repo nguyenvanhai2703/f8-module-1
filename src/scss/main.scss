@@ -1,0 +1,119 @@
+@use "./reset";
+
+// layout
+@use "./layout/grid";
+@use "./layout/header";
+@use "./layout/footer";
+
+//page
+@use "./page/about";
+@use "./page/home";
+@use "./page/practice";
+@use "./page/blog";
+@use "./page/contact";
+
+// common
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --white: #ffffff;
+  --orange: #fd6038;
+  --yellow: #fed464;
+  --green: #017848;
+  --dark: #0e1412;
+  --grey: #586863;
+  --yellow-light: #f8ebc9;
+  --heading-font: Roboto Slab;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Manrope";
+  margin: 0;
+  padding: 0;
+  background-color: #b3afaf;
+}
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+.sub-heading {
+  font-family: var(--heading-font);
+}
+
+.sub-heading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 70px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--grey);
+}
+span {
+  color: var(--grey);
+}
+.container {
+  max-width: 1170px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.wrapper {
+  max-width: 1440px;
+  min-height: 859px;
+  background-color: var(--white);
+  margin-left: auto;
+  margin-right: auto;
+}

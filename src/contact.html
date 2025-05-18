@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <%- include("./partials/head.ejs") %>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col"><%- include("./partials/header.ejs") %></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- end -->
+      <!-- main -->
+      <main>
+        <section class="title-contact">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="title">
+                  <span>Contact us</span>
+                  <h2>We Are Always Ready To Hear For You.</h2>
+                  <p>
+                    The right move at the right time saves your investment. live
+                    the dream of expanding your business.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" placeholder="Enter your name" />
+                  </div>
+                  <div class="col-6">
+                    <input type="text" placeholder="Comapy (optioanl)" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" placeholder="Your email" />
+                  </div>
+                  <div class="col-6">
+                    <input type="text" placeholder="Phone number" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="comment"
+                      type="text"
+                      placeholder="Tell us about yourself"
+                    />
+                  </div>
+                </div>
+                <button class="btn">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer><%-include("./partials/footer.ejs") %></footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
